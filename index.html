@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js"></script>
+    <title>IP Address Tracker</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h4 class="title">IP Address Tracker</h4>
+        <form>
+            <div class="ip-addr-data">
+                <div class="input-box">
+                    <input type="text" id="ip" placeholder="Enter IP Address" required>
+                </div>
+                <div class="input-box">
+                    <button type="submit" class="btn">Search</button>
+                </div>
+            </div>
+
+        </form>
+        <br>
+        <h4 class="title">IP Address Location Details</h4>
+        <div class="ip-location-data">
+            <p>IP Address</p>
+            <textarea name="ipAddress" id="ipAddress-textarea" cols="20" rows="1" disabled></textarea>
+            <p>Country</p>
+            <textarea name="country" id="country-textarea" cols="20" rows="1" disabled></textarea>
+            <p>Latitude</p>
+            <textarea name="latitude" id="latitude-textarea" cols="20" rows="1" disabled></textarea>
+            <p>Longitude</p>
+            <textarea name="longitude" id="longitude-textarea" cols="20" rows="1" disabled></textarea>
+            <p>Timezone</p>
+            <textarea name="timezone" id="timezone-textarea" cols="20" rows="1" disabled></textarea>
+        </div>
+    </div>
+    <script src="./script/app.js"></script>
+</body>
+
+</html>
